@@ -15,7 +15,8 @@ csv파일을 파싱하여 H2 DB에 저장한 후 타겟상품을 검색하여 �
 5. Library : junit 4.13.1, lombok, jackson-databind 2.13.1  
 6. IDE : IntelliJ
 7. OS: windows 11  
-8. localhost port : 8080  
+8. localhost port : 8080
+9. 기타 툴 : postman
 
 <br>
 
