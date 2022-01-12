@@ -52,24 +52,30 @@ csv를 파싱하는 helper class를 생성했습니다. ,을 기준으로 문자
 
 <br>
 
-####5. 어플리케이션 실행시 table 생성과 초기 csv 데이터가 insert되도록 구현.
+#### 5. 어플리케이션 실행시 table 생성과 초기 csv 데이터가 insert되도록 구현.
 ApplicationListener<ContextRefreshedEvent>를 implements 하는 class를 구현하여 Override한 onApplicationEvent(ContextRefreshedEvent event) 메서드를 사용하여  
 어플리케이션 시작시에 csv파일을 DB에 Table을 만들고 초기 데이터를 insert하도록 했습니다.
 
 <br>
 
-####6. 필요한 정보를 획득하기위한  쿼리문 작성 (Repository).
+#### 6. 필요한 정보를 획득하기위한  쿼리문 작성 (Repository).
 추천 상품을 select하는 로직을 위해 Repository에 @Query() 를 사용하여 커스텀 쿼리문을 작성했습니다.
 
 
 <br>
 
-####7. DAO를 실행시킬 Service Interface와 ServiceImpl Class 생성.
+#### 7. DAO를 실행시킬 Service Interface와 ServiceImpl Class 생성.
 
 Controller의 역할을 명확히 분리시키고자 Service단을 작성했습니다.
 
 <br>
 
-####8. RESTController의 getProduct 메서드 작성
+#### 8. RESTController의 getProduct 메서드 작성
 
 마지막으로 JSON데이터를 출력할 로직으르 Controller에 작성하였습니다.
+  
+#### 9. 최종 산출물
+  
+![image](https://user-images.githubusercontent.com/87082855/149232824-4cdaa8fc-0642-44ea-ab9b-f0652305c204.png)
+![image](https://user-images.githubusercontent.com/87082855/149233005-6fdc2c7b-b026-4c76-8ff3-33f1a13ce87d.png)
+
