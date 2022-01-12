@@ -1,7 +1,6 @@
 package com.eigene.productservice.web;
 
-import com.eigene.productservice.domain.product.ProductRepository;
-import com.eigene.productservice.domain.rec.RecRepository;
+import com.eigene.productservice.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,11 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebRestController {
 
-    private ProductRepository productRepository;
-    private RecRepository recRepository;
+    ProductService productService;
 
-    @GetMapping("/")
-    public void saveProduct(String id){
+    @GetMapping("/rec")
+    public void getProduct(String id){
+
+        System.out.println(productService.getProductById(id));
 
     }
 }

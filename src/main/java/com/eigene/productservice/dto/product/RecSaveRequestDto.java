@@ -1,8 +1,9 @@
 package com.eigene.productservice.dto.product;
 
-import com.eigene.productservice.domain.product.Product;
+
 import com.eigene.productservice.domain.rec.Rec;
 
+import com.eigene.productservice.domain.rec.RecId;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,15 +14,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class RecSaveRequestDto {
 
-    private String target_item_id;
-    private String result_item_id;
+    private RecId recId;
     private Integer rank;
     private Integer score;
 
     public Rec toEntity(){
         return Rec.builder()
-                .target_item_id(target_item_id)
-                .result_item_id(result_item_id)
+                .recId(recId)
                 .rank(rank)
                 .score(score)
                 .build();

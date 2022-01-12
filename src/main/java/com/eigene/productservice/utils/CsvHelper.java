@@ -3,6 +3,7 @@ package com.eigene.productservice.utils;
 
 import com.eigene.productservice.domain.product.Product;
 import com.eigene.productservice.domain.rec.Rec;
+import com.eigene.productservice.domain.rec.RecId;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -22,7 +23,14 @@ public class CsvHelper {
                 String line = "";
                 while ((line = br.readLine()) != null){
                     String[] columns = line.replaceAll("\"","").split(",");
-                    Product product = new Product(columns[0],columns[1],columns[2],columns[3],Integer.parseInt(columns[4]),Integer.parseInt(columns[5]));
+                    Product product = Product.builder()
+                            .item_id(columns[0])
+                            .item_name(columns[1])
+                            .item_image(columns[2])
+                            .item_url(columns[3])
+                            .original_price(Integer.parseInt(columns[4]))
+                            .sale_price(Integer.parseInt(columns[5]))
+                            .build();
                     productArrayList.add(product);
                 }
             } catch (FileNotFoundException e) {
@@ -50,7 +58,12 @@ public class CsvHelper {
                 String line = "";
                 while ((line = br.readLine()) != null){
                     String[] columns = line.replaceAll("\"","").split(",");
-                    Rec rec = new Rec(columns[0],columns[1],Integer.parseInt(columns[2]),Integer.parseInt(columns[3]));
+                    RecId recId = new RecId(columns[0],columns[1]);
+                    Rec rec = Rec.builder()
+                            .recId(recId)
+                            .rank(Integer.parseInt(columns[2]))
+                            .score(Integer.parseInt(columns[3]))
+                            .build();
                     recArrayList.add(rec);
                 }
             } catch (FileNotFoundException e) {

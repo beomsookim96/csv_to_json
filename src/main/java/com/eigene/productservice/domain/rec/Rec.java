@@ -1,27 +1,19 @@
 package com.eigene.productservice.domain.rec;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Rec {
+public class Rec{
 
-    //FK
-    @Id
-    private String target_item_id; // Product의 PK 와 FK 관계입니다.
+    @EmbeddedId
+    private RecId recId;
 
     //Columns
-    @Column
-    private String result_item_id;
 
     @Column
     private Integer score;
@@ -30,11 +22,11 @@ public class Rec {
     private Integer rank;
 
     @Builder
-    public Rec(String target_item_id, String result_item_id, Integer score, Integer rank) {
-        this.target_item_id = target_item_id;
-        this.result_item_id = result_item_id;
+    public Rec(RecId recId, Integer score, Integer rank) {
+        this.recId = recId;
         this.score = score;
         this.rank = rank;
     }// Rec() builder
 
 }// end class Rec
+

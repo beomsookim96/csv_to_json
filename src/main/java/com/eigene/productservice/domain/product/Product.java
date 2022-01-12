@@ -5,9 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -45,4 +43,15 @@ public class Product {
         this.sale_price = sale_price;
     } // Product() builder
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "item_id='" + item_id + '\'' +
+                ", item_name='" + item_name + '\'' +
+                ", item_image='" + item_image + '\'' +
+                ", item_url='" + item_url + '\'' +
+                ", original_price=" + original_price +
+                ", sale_price=" + sale_price +
+                '}';
+    }
 } // end class Product
