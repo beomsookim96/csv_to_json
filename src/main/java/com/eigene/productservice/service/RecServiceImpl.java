@@ -16,7 +16,7 @@ public class RecServiceImpl implements RecService{
 
     @Override
     public List<Rec> getRecsById(String id) {
-
         return recRepository.get(id);
-    }
-}
+    }// getRecsById()
+
+}// end class

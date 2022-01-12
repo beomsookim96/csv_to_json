@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
+
 @Component
 @AllArgsConstructor
 public class StartupApplicationListener implements ApplicationListener<ContextRefreshedEvent> {
@@ -30,5 +31,6 @@ public class StartupApplicationListener implements ApplicationListener<ContextRe
         for (Rec rec : recArrayList) {
             recRepository.save(rec);
         }
-    }
-}
+    }// onApplicationEvent()
+
+}// end class

@@ -12,11 +12,14 @@ import java.util.ArrayList;
 @Component
 public class CsvHelper {
 
-    public ArrayList<Product> parseCsvToProductList(){
+    public ArrayList<Product> parseCsvToProductList(){// csv를 ArrayList<Product>로 가공합니다.
+
         ArrayList<Product> productArrayList = new ArrayList<>();
         BufferedReader br = null;
+
         try {
             try {
+
                 File file = new File("src/main/resources/csv/product.csv");
                 FileReader fileReader = new FileReader(file);
                 br = new BufferedReader(fileReader);
@@ -32,6 +35,7 @@ public class CsvHelper {
                             .sale_price(Integer.parseInt(columns[5]))
                             .build();
                     productArrayList.add(product);
+
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -39,19 +43,22 @@ public class CsvHelper {
                 e.printStackTrace();
             }finally {
                 br.close();
-            }
+            }// try catch finally
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }// try catch
+
         return productArrayList;
 
-    }
+    }// parseCsvToProductList()
 
-    public ArrayList<Rec> parseCsvToRecList(){
+    public ArrayList<Rec> parseCsvToRecList(){ //csv를 ArrayList<Rec>로 가공합니다.
+
         ArrayList<Rec> recArrayList = new ArrayList<>();
         BufferedReader br = null;
         try {
             try {
+
                 File file = new File("src/main/resources/csv/rec.csv");
                 FileReader fileReader = new FileReader(file);
                 br = new BufferedReader(fileReader);
@@ -65,6 +72,7 @@ public class CsvHelper {
                             .score(Integer.parseInt(columns[3]))
                             .build();
                     recArrayList.add(rec);
+
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -72,12 +80,13 @@ public class CsvHelper {
                 e.printStackTrace();
             }finally {
                 br.close();
-            }
+            }//try catch finally
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }//try catch
+
         return recArrayList;
 
-    }
+    }// parseCsvToRecList()
 
-}
+}// end class

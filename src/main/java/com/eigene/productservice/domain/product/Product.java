@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
@@ -42,17 +43,6 @@ public class Product {
         this.item_url = item_url;
         this.original_price = original_price;
         this.sale_price = sale_price;
-    } // Product() builder
+    } // Product()
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "item_id='" + item_id + '\'' +
-                ", item_name='" + item_name + '\'' +
-                ", item_image='" + item_image + '\'' +
-                ", item_url='" + item_url + '\'' +
-                ", original_price=" + original_price +
-                ", sale_price=" + sale_price +
-                '}';
-    }
-} // end class Product
+} // end class

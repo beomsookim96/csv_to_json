@@ -29,5 +29,6 @@ public class ProductGetRequestDto {
         this.sale_price = product.getSale_price();
         this.score = rec.getScore();
         this.rank = rec.getRank();
-    }
-}
+    }// ProductGetRequestDto()
+
+}// end class

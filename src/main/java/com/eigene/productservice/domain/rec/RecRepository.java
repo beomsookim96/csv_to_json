@@ -13,4 +13,5 @@ public interface RecRepository extends JpaRepository<Rec, RecId> {
 
         @Query(value = "SELECT * from rec WHERE target_item_id = :target_id ORDER BY rec.rank desc", nativeQuery = true)
         public List<Rec> get(@Param("target_id")String target_id);
-}
+
+}// end interface

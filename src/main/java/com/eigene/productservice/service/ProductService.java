@@ -7,4 +7,4 @@ public interface ProductService {
 
     public abstract Product getProductById(String id);
 
-}
+} // end interface

@@ -11,6 +11,8 @@ import javax.persistence.*;
 @Entity
 public class Rec{
 
+    //Key
+
     @EmbeddedId
     private RecId recId;
 
@@ -27,15 +29,7 @@ public class Rec{
         this.recId = recId;
         this.score = score;
         this.rank = rank;
-    }// Rec() builder
+    }// Rec()
 
-    @Override
-    public String toString() {
-        return "Rec{" +
-                "recId=" + recId +
-                ", score=" + score +
-                ", rank=" + rank +
-                '}';
-    }
-}// end class Rec
+}// end class
 

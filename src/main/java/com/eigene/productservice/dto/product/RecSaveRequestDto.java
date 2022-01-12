@@ -26,4 +26,4 @@ public class RecSaveRequestDto {
                 .build();
     } // to Entity()
 
-} // end class RecSaveRequestDto
+} // end class
