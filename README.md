@@ -80,5 +80,10 @@ Controller의 역할을 명확히 분리시키고자 Service단을 작성했습�
 마지막으로 JSON데이터를 출력할 로직으르 Controller에 작성하였습니다.
 
 ###최종 산출물
+  
+  <br>
+  
 ![image](https://user-images.githubusercontent.com/87082855/149232824-4cdaa8fc-0642-44ea-ab9b-f0652305c204.png)
+  
+  <br>
 ![image](https://user-images.githubusercontent.com/87082855/149233005-6fdc2c7b-b026-4c76-8ff3-33f1a13ce87d.png)
