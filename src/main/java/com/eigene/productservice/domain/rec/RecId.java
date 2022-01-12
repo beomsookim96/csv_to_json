@@ -13,6 +13,7 @@ import java.io.Serializable;
  * Date: 1/13/2022
  * Time: 오전 2:22
  */
+@Data
 @Embeddable
 public class RecId implements Serializable {
 

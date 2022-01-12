@@ -28,5 +28,13 @@ public class Rec{
         this.rank = rank;
     }// Rec() builder
 
+    @Override
+    public String toString() {
+        return "Rec{" +
+                "recId=" + recId +
+                ", score=" + score +
+                ", rank=" + rank +
+                '}';
+    }
 }// end class Rec
 
