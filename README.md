@@ -1,5 +1,14 @@
 ## eiegene 코딩테스트 -김범수-
 
+###최종 산출물
+![image](https://user-images.githubusercontent.com/87082855/149232824-4cdaa8fc-0642-44ea-ab9b-f0652305c204.png)
+![image](https://user-images.githubusercontent.com/87082855/149233005-6fdc2c7b-b026-4c76-8ff3-33f1a13ce87d.png)
+
+<br>
+
+csv파일을 파싱하여 H2 DB에 저장한 후 타겟상품을 검색하여 타겟상품 정보와 추천상품의 정보를 관련도 순으로 정렬하였습니다.  
+또 그것을 JSON데이터로 출력했습니다.
+
 <br>
 
 ### 환경
@@ -73,9 +82,4 @@ Controller의 역할을 명확히 분리시키고자 Service단을 작성했습�
 #### 8. RESTController의 getProduct 메서드 작성
 
 마지막으로 JSON데이터를 출력할 로직으르 Controller에 작성하였습니다.
-  
-#### 9. 최종 산출물
-  
-![image](https://user-images.githubusercontent.com/87082855/149232824-4cdaa8fc-0642-44ea-ab9b-f0652305c204.png)
-![image](https://user-images.githubusercontent.com/87082855/149233005-6fdc2c7b-b026-4c76-8ff3-33f1a13ce87d.png)
 
