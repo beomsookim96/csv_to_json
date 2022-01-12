@@ -7,12 +7,7 @@ import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import java.io.Serializable;
 
-/**
- * Created by KBS.
- * User: KBS
- * Date: 1/13/2022
- * Time: 오전 2:22
- */
+
 @Data
 @Embeddable
 public class RecId implements Serializable {

@@ -1,10 +1,11 @@
 package com.eigene.productservice.domain.rec;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
 
-
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
