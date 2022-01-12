@@ -48,36 +48,45 @@ rec 테이블의 PK는 target_item_id와 result_item_id를 복합키로 설정�
 
 #### 3.데이터베이스 구축과 DTO, Entity, Repository 생성
 DB구축은 Spring Boot에 내장되어있는 H2 DB server 를 사용하였습니다.  
-Entity,Repository를 생성하고 Entity를 남용하지 못하도록 용도에 맞는 DTO를 생성했습니다
+Entity,Repository를 생성하고 Entity를 남용하지 못하도록 용도에 맞는 DTO를 생성했습니다  
+https://github.com/beomsookim96/eiegen-beomsookim/tree/master/src/main/java/com/eigene/productservice/domain  
+https://github.com/beomsookim96/eiegen-beomsookim/tree/master/src/main/java/com/eigene/productservice/dto/product
 
 <br>
 
 #### 4. csv파싱 후 Entity로 변환시키는 클래스 생성.
-csv를 파싱하는 helper class를 생성했습니다. ,을 기준으로 문자열을 split하여 Builder를 통해 Entity로 변환시킵니다.
+csv를 파싱하는 helper class를 생성했습니다. ,을 기준으로 문자열을 split하여 Builder를 통해 Entity로 변환시킵니다.  
+https://github.com/beomsookim96/eiegen-beomsookim/blob/master/src/main/java/com/eigene/productservice/utils/CsvHelper.java
+
 
 <br>
 
 #### 5. 어플리케이션 실행시 table 생성과 초기 csv 데이터가 insert되도록 구현.
 ApplicationListener<ContextRefreshedEvent>를 implements 하는 class를 구현하여 Override한 onApplicationEvent(ContextRefreshedEvent event) 메서드를 사용하여  
-어플리케이션 시작시에 csv파일을 DB에 Table을 만들고 초기 데이터를 insert하도록 했습니다.
+어플리케이션 시작시에 csv파일을 DB에 Table을 만들고 초기 데이터를 insert하도록 했습니다.  
+https://github.com/beomsookim96/eiegen-beomsookim/blob/master/src/main/java/com/eigene/productservice/listener/StartupApplicationListener.java
 
 <br>
 
 #### 6. 필요한 정보를 획득하기위한  쿼리문 작성 (Repository).
-추천 상품을 select하는 로직을 위해 Repository에 @Query() 를 사용하여 커스텀 쿼리문을 작성했습니다.
+추천 상품을 select하는 로직을 위해 Repository에 @Query() 를 사용하여 커스텀 쿼리문을 작성했습니다.  
+https://github.com/beomsookim96/eiegen-beomsookim/blob/master/src/main/java/com/eigene/productservice/domain/rec/RecRepository.java
 
 
 <br>
 
 #### 7. DAO를 실행시킬 Service Interface와 ServiceImpl Class 생성.
 
-Controller의 역할을 명확히 분리시키고자 Service단을 작성했습니다.
+Controller의 역할을 명확히 분리시키고자 Service단을 작성했습니다.  
+https://github.com/beomsookim96/eiegen-beomsookim/tree/master/src/main/java/com/eigene/productservice/service
 
 <br>
 
 #### 8. RESTController의 getProduct 메서드 작성
 
-마지막으로 JSON데이터를 출력할 로직으르 Controller에 작성하였습니다.
+마지막으로 JSON데이터를 출력할 로직으르 Controller에 작성하였습니다.  
+  
+https://github.com/beomsookim96/eiegen-beomsookim/blob/master/src/main/java/com/eigene/productservice/web/WebRestController.java
 
 ###최종 산출물
   
