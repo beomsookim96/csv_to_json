@@ -1,9 +1,9 @@
-package com.eigene.productservice.utils;
+package com.csvtojson.productservice.utils;
 
 
-import com.eigene.productservice.domain.product.Product;
-import com.eigene.productservice.domain.rec.Rec;
-import com.eigene.productservice.domain.rec.RecId;
+import com.csvtojson.productservice.domain.product.Product;
+import com.csvtojson.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.RecId;
 import org.springframework.stereotype.Component;
 
 import java.io.*;

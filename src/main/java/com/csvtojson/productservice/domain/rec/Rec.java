@@ -1,4 +1,4 @@
-package com.eigene.productservice.domain.rec;
+package com.csvtojson.productservice.domain.rec;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;

@@ -1,9 +1,9 @@
-package com.eigene.productservice.dto.product;
+package com.csvtojson.productservice.dto.product;
 
 
-import com.eigene.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.RecId;
 
-import com.eigene.productservice.domain.rec.RecId;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

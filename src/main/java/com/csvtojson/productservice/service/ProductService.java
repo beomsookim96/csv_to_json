@@ -1,7 +1,7 @@
-package com.eigene.productservice.service;
+package com.csvtojson.productservice.service;
 
 
-import com.eigene.productservice.domain.product.Product;
+import com.csvtojson.productservice.domain.product.Product;
 
 public interface ProductService {
 

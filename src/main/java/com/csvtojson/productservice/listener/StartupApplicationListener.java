@@ -1,10 +1,10 @@
-package com.eigene.productservice.listener;
+package com.csvtojson.productservice.listener;
 
-import com.eigene.productservice.domain.product.Product;
-import com.eigene.productservice.domain.product.ProductRepository;
-import com.eigene.productservice.domain.rec.Rec;
-import com.eigene.productservice.domain.rec.RecRepository;
-import com.eigene.productservice.utils.CsvHelper;
+import com.csvtojson.productservice.domain.product.Product;
+import com.csvtojson.productservice.domain.product.ProductRepository;
+import com.csvtojson.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.RecRepository;
+import com.csvtojson.productservice.utils.CsvHelper;
 import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

@@ -1,4 +1,4 @@
-package com.eigene.productservice.domain.rec;
+package com.csvtojson.productservice.domain.rec;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

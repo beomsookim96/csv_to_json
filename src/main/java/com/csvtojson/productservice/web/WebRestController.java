@@ -1,10 +1,10 @@
-package com.eigene.productservice.web;
+package com.csvtojson.productservice.web;
 
-import com.eigene.productservice.domain.product.Product;
-import com.eigene.productservice.domain.rec.Rec;
-import com.eigene.productservice.dto.product.ProductGetRequestDto;
-import com.eigene.productservice.service.ProductService;
-import com.eigene.productservice.service.RecService;
+import com.csvtojson.productservice.domain.product.Product;
+import com.csvtojson.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.dto.product.ProductGetRequestDto;
+import com.csvtojson.productservice.service.ProductService;
+import com.csvtojson.productservice.service.RecService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;

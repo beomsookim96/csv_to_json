@@ -1,7 +1,7 @@
-package com.eigene.productservice.service;
+package com.csvtojson.productservice.service;
 
 
-import com.eigene.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.Rec;
 
 import java.util.List;
 

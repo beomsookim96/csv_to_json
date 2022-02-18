@@ -1,8 +1,8 @@
-package com.eigene.productservice.service;
+package com.csvtojson.productservice.service;
 
 
-import com.eigene.productservice.domain.rec.Rec;
-import com.eigene.productservice.domain.rec.RecRepository;
+import com.csvtojson.productservice.domain.rec.Rec;
+import com.csvtojson.productservice.domain.rec.RecRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.eigene.productservice.domain.product;
+package com.csvtojson.productservice.domain.product;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;
